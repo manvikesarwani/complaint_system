@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusCare | College Complaint Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">Campus<span>Care</span></div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="#statistics">Dashboard</a>
+            <a href="#complaints">Complaints</a>
+        </nav>
+
+        <a href="login.html" class="login">Login</a>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+
+            <div>
+                <p class="subtitle">COLLEGE SUPPORT PORTAL</p>
+
+                <h1>Welcome to CampusCare</h1>
+
+                <p class="description">
+                    Raise concerns, track complaints and stay updated
+                    on their progress.
+                </p>
+            </div>
+
+            <a href="submit_complaint.html" class="submit-btn">
+                + Submit Complaint
+            </a>
+
+        </section>
+
+
+        <!-- Complaint Statistics -->
+        <section id="statistics">
+
+            <h2>Complaint Overview</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <p>Total Complaints</p>
+                    <h3>120</h3>
+                    <span>All reported complaints</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Pending</p>
+                    <h3>25</h3>
+                    <span>Awaiting review</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>In Progress</p>
+                    <h3>15</h3>
+                    <span>Currently being handled</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Resolved</p>
+                    <h3>80</h3>
+                    <span>Successfully completed</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="actions">
+
+                <div class="action-card">
+
+                    <h3>Submit a Complaint</h3>
+
+                    <p>
+                        Report problems related to classrooms,
+                        laboratories, electricity and other facilities.
+                    </p>
+
+                    <a href="submit_complaint.html">
+                        Submit Complaint →
+                    </a>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <h3>Track a Complaint</h3>
+
+                    <p>
+                        View complaint details and check the
+                        latest status of your submitted request.
+                    </p>
+
+                    <a href="track_complaint.html">
+                        Track Complaint →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Complaints -->
+        <section class="recent-complaints" id="complaints">
+
+            <h2>Recent Complaints</h2>
+
+            <div class="table-box">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>CMP-001</td>
+                            <td>Electrical</td>
+                            <td>20 Nov 2026</td>
+                            <td><span class="pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP-002</td>
+                            <td>Sanitation</td>
+                            <td>19 Nov 2026</td>
+                            <td><span class="progress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CMP-003</td>
+                            <td>Library</td>
+                            <td>18 Nov 2026</td>
+                            <td><span class="resolved">Resolved</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>CampusCare © 2026 | College Complaint Management System</p>
+    </footer>
+
+
+</body>
+</html>

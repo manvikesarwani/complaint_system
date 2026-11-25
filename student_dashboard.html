@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - CampusCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusCare</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_dashboard.html">Dashboard</a></li>
+            <li><a href="submit_complaint.html">Submit Complaint</a></li>
+            <li><a href="track_complaint.html">Track Complaint</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-welcome">
+            <h1>Welcome, Student!</h1>
+            <p>Manage your complaints and track their progress here.</p>
+        </section>
+
+        <section class="dashboard-stats">
+            <div class="dashboard-stat-card">
+                <h3>Total Complaints</h3>
+                <p>05</p>
+            </div>
+
+            <div class="dashboard-stat-card">
+                <h3>Pending</h3>
+                <p>02</p>
+            </div>
+
+            <div class="dashboard-stat-card">
+                <h3>In Progress</h3>
+                <p>01</p>
+            </div>
+
+            <div class="dashboard-stat-card">
+                <h3>Resolved</h3>
+                <p>02</p>
+            </div>
+        </section>
+
+        <section class="dashboard-actions">
+            <h2>Quick Actions</h2>
+
+            <div class="action-buttons">
+                <a href="submit_complaint.html" class="dashboard-button">
+                    Submit a Complaint
+                </a>
+
+                <a href="track_complaint.html" class="dashboard-button secondary-button">
+                    Track a Complaint
+                </a>
+            </div>
+        </section>
+
+        <section class="dashboard-history">
+            <h2>Recent Complaints</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CC101</td>
+                            <td>Wi-Fi Connectivity</td>
+                            <td>20 Nov 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CC102</td>
+                            <td>Classroom Projector</td>
+                            <td>18 Nov 2026</td>
+                            <td><span class="status progress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>CC103</td>
+                            <td>Library Facilities</td>
+                            <td>15 Nov 2026</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusCare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

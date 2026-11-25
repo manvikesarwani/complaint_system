@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CampusCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusCare</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admin_dashboard.html">Dashboard</a></li>
+            <li><a href="#complaints">All Complaints</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="admin-container">
+
+        <section class="admin-welcome">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome, Administrator! Manage and review student complaints.</p>
+        </section>
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <h3>Total Complaints</h3>
+                <p>25</p>
+            </div>
+
+            <div class="admin-stat-card">
+                <h3>Pending</h3>
+                <p>08</p>
+            </div>
+
+            <div class="admin-stat-card">
+                <h3>In Progress</h3>
+                <p>07</p>
+            </div>
+
+            <div class="admin-stat-card">
+                <h3>Resolved</h3>
+                <p>10</p>
+            </div>
+
+        </section>
+
+        <section class="admin-complaints" id="complaints">
+
+            <h2>Manage Complaints</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Student</th>
+                            <th>Category</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CC101</td>
+                            <td>Rahul Sharma</td>
+                            <td>Internet</td>
+                            <td>Wi-Fi Connectivity</td>
+                            <td>20 Nov 2026</td>
+                            <td>
+                                <select class="status-select">
+                                    <option selected>Pending</option>
+                                    <option>In Progress</option>
+                                    <option>Resolved</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CC102</td>
+                            <td>Priya Singh</td>
+                            <td>Infrastructure</td>
+                            <td>Classroom Projector</td>
+                            <td>18 Nov 2026</td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option selected>In Progress</option>
+                                    <option>Resolved</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CC103</td>
+                            <td>Aman Verma</td>
+                            <td>Library</td>
+                            <td>Library Facilities</td>
+                            <td>15 Nov 2026</td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option>In Progress</option>
+                                    <option selected>Resolved</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CC104</td>
+                            <td>Neha Gupta</td>
+                            <td>Academics</td>
+                            <td>Class Schedule Issue</td>
+                            <td>14 Nov 2026</td>
+                            <td>
+                                <select class="status-select">
+                                    <option selected>Pending</option>
+                                    <option>In Progress</option>
+                                    <option>Resolved</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusCare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint - CampusCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusCare</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_dashboard.html">Dashboard</a></li>
+            <li><a href="submit_complaint.html">Submit Complaint</a></li>
+            <li><a href="track_complaint.html">Track Complaint</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="complaint-container">
+
+        <div class="complaint-card">
+            <h1>Submit a Complaint</h1>
+            <p class="complaint-description">
+                Please provide the details of your issue.
+                The administration will review your complaint.
+            </p>
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="title">Complaint Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="Enter complaint title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Complaint Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Academics">Academics</option>
+                        <option value="Hostel">Hostel</option>
+                        <option value="Library">Library</option>
+                        <option value="Internet">Internet / Wi-Fi</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="Enter the location of the issue"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Complaint Description</label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        placeholder="Describe your problem in detail"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="complaint-submit">
+                    Submit Complaint
+                </button>
+
+            </form>
+
+            <a href="student_dashboard.html" class="back-link">
+                Back to Dashboard
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusCare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

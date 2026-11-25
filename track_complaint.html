@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint - CampusCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusCare</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_dashboard.html">Dashboard</a></li>
+            <li><a href="submit_complaint.html">Submit Complaint</a></li>
+            <li><a href="track_complaint.html">Track Complaint</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="track-container">
+
+        <section class="track-card">
+            <h1>Track Your Complaint</h1>
+
+            <p class="track-description">
+                Enter your Complaint ID to check its current status.
+            </p>
+
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="complaint-id">Complaint ID</label>
+                    <input
+                        type="text"
+                        id="complaint-id"
+                        name="complaint_id"
+                        placeholder="Example: CC101"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="track-submit">
+                    Track Complaint
+                </button>
+            </form>
+        </section>
+
+        <section class="track-info">
+            <h2>How Complaint Tracking Works</h2>
+
+            <div class="tracking-steps">
+                <div class="tracking-step">
+                    <span>1</span>
+                    <h3>Submitted</h3>
+                    <p>Your complaint has been received.</p>
+                </div>
+
+                <div class="tracking-step">
+                    <span>2</span>
+                    <h3>Under Review</h3>
+                    <p>The administration is reviewing your complaint.</p>
+                </div>
+
+                <div class="tracking-step">
+                    <span>3</span>
+                    <h3>In Progress</h3>
+                    <p>Action is being taken to resolve the issue.</p>
+                </div>
+
+                <div class="tracking-step">
+                    <span>4</span>
+                    <h3>Resolved</h3>
+                    <p>Your complaint has been resolved.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="student_dashboard.html" class="back-link">
+            Back to Dashboard
+        </a>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusCare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
